@@ -1,30 +1,23 @@
-# This is a sample Python script.
+n = int(input())
+a = input().split()
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+for i in range(n):
+    a[i]=int(a[i])
+
+d=[]
+#리스트 생성 잘했다.
+for i in range(24):
+    d.append(0)
+
+#아직 리스트에는 몇개 있다 정의가 없는 상태
+#따라서 append함수로 해줘야 한다.
+
+for i in range(n):
+    d[a[i]]+=1
+
+for i in range(1, 24):
+    print(d[i], end=' ')
 
 
-#def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
- #   print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-#if __name__ == '__main__':
-#    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-a=int(input())
-if(a<0):
-    if(a%2==0):
-        print("A")
-    else:
-        print("B")
-else:
-    if(a%2==0):
-        print("C")
-    else:
-        print("D")
-        
 
 
